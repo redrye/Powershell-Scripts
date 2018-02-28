@@ -1,4 +1,11 @@
-
+############################################
+#
+#	Unarchiving script originally
+#	for zip files, but can be modified
+#	for various archive files
+#
+#
+###########################################
 param(
 	[array] $files
 )
