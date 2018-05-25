@@ -1,0 +1,2 @@
+# Create multiple directories at once
+echo dir1 dir2 dir3 | foreach $_{mkdir $_}
