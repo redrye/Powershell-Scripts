@@ -16,16 +16,15 @@ $Start_Time = Get-Date
 #$wc.DownloadFile($url, $output)
 
 # OR - These are diferent method of doint the same thing
-
-# (New-Object System.Net.Webclient).DownloadFile($url, $output)
+(New-Object System.Net.Webclient).DownloadFile($url, $output)
 
 ## Start-BitsTransfer Method
 
-Import-Module BitsTransfer
-Start-BitsTransfer -Source $url -Destination $output
+#Import-Module BitsTransfer
+#Start-BitsTransfer -Source $url -Destination $output
 
 #OR
 
-Start-BitsTransfer -Source $url -Destination $output -Asynchronous
+#Start-BitsTransfer -Source $url -Destination $output -Asynchronous
 
-Write-Output "Time taken for System.Net.Webclient Method was: $((Get-Date).Subtract($Start_Time).Seconds) seconds)" 
+#Write-Output "Time taken for System.Net.Webclient Method was: $((Get-Date).Subtract($Start_Time).Seconds) seconds)" 
